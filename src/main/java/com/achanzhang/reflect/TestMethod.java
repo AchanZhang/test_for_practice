@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 
 public class TestMethod {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
-        Class clazz = Class.forName("com.achanzhang.reflect.Person");
+        Class<?> clazz = Class.forName("com.achanzhang.reflect.Person");
 
         //1.获取方法
         //1.1 获取clazz对应类中的所有方法--方法数组（一）
@@ -19,7 +19,7 @@ public class TestMethod {
         }
         System.out.println();
 
-        //1.2获取素有方法，包括私有方法--方法数组（二）
+        //1.2获取所有方法，包括私有方法--方法数组（二）
         //所有声明的方法，都可以获取到，且只获取当前类
         methods = clazz.getDeclaredMethods();
         for (Method method : methods) {

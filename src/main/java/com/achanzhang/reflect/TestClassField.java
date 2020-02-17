@@ -13,10 +13,14 @@ public class TestClassField {
         field.set(obj, val);
     }
 
-    public Field getField(Class clazz, String fieldName) throws NoSuchFieldException {
+    public Field getField(Class<?> clazz, String fieldName) throws NoSuchFieldException {
         Field field = null;
-        for (Class clazz2 = clazz ; clazz2 != Object.class ; clazz2 = clazz2.getSuperclass()) {
-            field = clazz2.getDeclaredField(fieldName);
+        for (; clazz != Object.class ; clazz = clazz.getSuperclass()) {
+            try {
+                field = clazz.getDeclaredField(fieldName);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return field;
     }
@@ -27,12 +31,12 @@ public class TestClassField {
         String fieldName = "age";
         Object val = 20;
 
-        //todo NoSuchFieldException: age
         Object obj = null;
-        Class clazz = Class.forName(className);
+        Class<?> clazz = Class.forName(className);
         Field field = testClassField.getField(clazz, fieldName);
         obj = clazz.newInstance();
         testClassField.setFieldValue(obj, field, val);
         Object value = testClassField.getFieldValue(obj, field);
+        System.out.println(value);
     }
 }

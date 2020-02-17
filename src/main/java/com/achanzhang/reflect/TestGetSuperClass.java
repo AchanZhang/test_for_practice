@@ -17,7 +17,7 @@ public class TestGetSuperClass {
      */
     public Object invokeBySuper(Object obj, String methodName, Object ... args) {
         //1.获取 Method 对象
-        Class[] parameterTypes = new Class[args.length];
+        Class<?>[] parameterTypes = new Class[args.length];
         for (int i = 0; i < args.length; i++) {
             parameterTypes[i] = args[i].getClass();
         }
@@ -43,7 +43,7 @@ public class TestGetSuperClass {
      * @param parameterTypes
      * @return
      */
-    public Method getMethod(Class clazz, String methodName, Class ... parameterTypes) {
+    public Method getMethod(Class<?> clazz, String methodName, Class<?> ... parameterTypes) {
         for ( ; clazz !=Object.class ; clazz = clazz.getSuperclass()) {
             try {
                 return clazz.getDeclaredMethod(methodName, parameterTypes);

@@ -16,6 +16,7 @@ public class Person {
         return age;
     }
 
+    @AgeValidator(min = 18, max = 35)
     public void setAge(Integer age) {
         this.age = age;
     }

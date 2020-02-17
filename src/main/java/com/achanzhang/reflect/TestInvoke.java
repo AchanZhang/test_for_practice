@@ -9,7 +9,7 @@ public class TestInvoke {
     public Object invokeByClassAndMethod(Object obj, String methodName, Object ... args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         //1.获取Method对象
         //因为getMethod的参数为Class列表类型，所以要把参数args转化为对应的Class类型
-        Class[] parameterType = new Class[args.length];
+        Class<?>[] parameterType = new Class[args.length];
         for (int i = 0; i < args.length; i++) {
             parameterType[i] = args[i].getClass();
             System.out.println(parameterType[i]);
