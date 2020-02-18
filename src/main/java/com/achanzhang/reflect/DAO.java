@@ -13,7 +13,6 @@ public class DAO<T> {
 
     //保存一个对象
     void save(T entity) {
-
     }
 
     public DAO(){
