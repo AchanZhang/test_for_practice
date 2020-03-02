@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.InnerClassThread;
+package com.achanzhang.multiThread.InnerClassThread;
 
 /*
     匿名内部类方式实现线程的创建

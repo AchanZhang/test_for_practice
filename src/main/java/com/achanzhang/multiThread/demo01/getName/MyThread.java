@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo03.sleep;
+package com.achanzhang.multiThread.demo01.getName;
 
 public class MyThread extends Thread{
     @Override

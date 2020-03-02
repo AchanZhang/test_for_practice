@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo01.getName;
+package com.achanzhang.multiThread.demo01.getName;
 
 public class Demo01GetThreadName {
     public static void main(String[] args){

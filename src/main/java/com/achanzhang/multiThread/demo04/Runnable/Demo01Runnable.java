@@ -1,7 +1,5 @@
-package com.achanzhang.testforpractice.demo04.Runnable;
+package com.achanzhang.multiThread.demo04.Runnable;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 /*
     创建多线程程序的第二种方式，实现Runnable接口

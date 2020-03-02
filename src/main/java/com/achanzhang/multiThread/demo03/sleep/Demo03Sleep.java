@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo03.sleep;
+package com.achanzhang.multiThread.demo03.sleep;
 
 public class Demo03Sleep {
     public static void main(String[] args){

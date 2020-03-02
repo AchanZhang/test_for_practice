@@ -1,6 +1,4 @@
-package com.achanzhang.testforpractice.demo02.setName;
-
-import org.springframework.beans.BeanUtils;
+package com.achanzhang.multiThread.demo02.setName;
 
 public class MyThread extends Thread{
 

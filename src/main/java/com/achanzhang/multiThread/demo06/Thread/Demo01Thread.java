@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo06.Thread;
+package com.achanzhang.multiThread.demo06.Thread;
 
 /*
     创建多线程程序的第一种方式，创建Thread类的子类

@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice;
+package com.achanzhang.multiThread;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

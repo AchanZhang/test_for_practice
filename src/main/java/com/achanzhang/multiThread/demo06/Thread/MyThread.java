@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo06.Thread;
+package com.achanzhang.multiThread.demo06.Thread;
 
 public class MyThread extends Thread{
 

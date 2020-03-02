@@ -1,6 +1,4 @@
-package com.achanzhang.testforpractice.demo01.getName;
-
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+package com.achanzhang.multiThread.demo03.sleep;
 
 public class MyThread extends Thread{
     @Override

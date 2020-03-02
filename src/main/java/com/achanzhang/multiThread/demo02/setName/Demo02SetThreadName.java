@@ -1,4 +1,4 @@
-package com.achanzhang.testforpractice.demo02.setName;
+package com.achanzhang.multiThread.demo02.setName;
 
 public class Demo02SetThreadName {
     public static void main(String[] args){
