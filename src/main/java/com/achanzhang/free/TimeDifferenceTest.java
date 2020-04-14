@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
-public class Test {
+public class TimeDifferenceTest {
     public static long fromDateStringToLong(String inVal) { // 此方法计算时间毫秒
         // 定义时间类型
         Date date = null;

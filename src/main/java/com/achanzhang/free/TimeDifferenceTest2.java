@@ -7,7 +7,7 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
 
-public class Test2 {
+public class TimeDifferenceTest2 {
     public static void main(String[] args) {
 
         System.out.println(LocalDateTime.now());
