@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class TimeFormatTest {
     public static void main(String[] args) throws ParseException {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
 //        Calendar c = Calendar.getInstance();
 //        c.add(Calendar.MONTH, 0);
 //        c.set(Calendar.DAY_OF_MONTH,1);//设置为1号,当前日期既为本月第一天
@@ -36,11 +36,19 @@ public class TimeFormatTest {
 //        String endMonthTime = sdf.format(calendar.getTime());
 //        System.out.println(startMonthTime);
 //        System.out.println(endMonthTime);
-        String time = "2020-02-20 00:00:00";
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date dateTime = sdf.parse(time);
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(dateTime);
-        System.out.println(calendar.get(Calendar.YEAR) + calendar.get(Calendar.MONTH));
+
+//        String time = "2020-02-20 00:00:00";
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        Date dateTime = sdf.parse(time);
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTime(dateTime);
+//        System.out.println(calendar.get(Calendar.YEAR) + calendar.get(Calendar.MONTH));
+
+        Calendar instance = Calendar.getInstance();
+        String nowTime = format.format(instance.getTime());
+        String[] split = nowTime.split("-");
+        for (String s : split) {
+            System.out.println(s);
+        }
     }
 }
