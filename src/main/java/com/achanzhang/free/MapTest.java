@@ -1,13 +1,10 @@
 package com.achanzhang.free;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MapTest {
-    public static void main(String[] args) {
-        Map<String, Object> map = new HashMap<>();
+    //    public static void main(String[] args) {
+//        Map<String, Object> map = new HashMap<>();
 //        map.put("collectTime", "2020");
 //        map.put("install", "199");
 //        if (map.size() <= 1) {
@@ -34,7 +31,28 @@ public class MapTest {
 //        map.put("list2", list2);
 //
 //        System.out.println(map.toString());
-        map.put("D0正数", "123");
-        System.out.println(map.get("D0正数"));
+//        map.put("D0正数", "123");
+//        System.out.println(map.get("D0正数"));
+//    }
+    public static void main(String[] args) {
+        List<List<String>> result = new ArrayList<>();
+        List<String> a = new ArrayList<>();
+        List<String> b = new ArrayList<>();
+        List<String> c = new ArrayList<>();
+        Map<String, List<String>> d = new LinkedHashMap<>();
+        a.add("a");
+        b.add("b");
+        c.add("c");
+        d.put("1",a);
+        d.put("2",b);
+        d.put("3",c);
+        a.add("1");
+        d.put("1",a);
+        d.forEach((k,v) -> {
+            result.add(v);
+        });
+        System.out.println(d);
+        System.out.println(result);
+
     }
 }
